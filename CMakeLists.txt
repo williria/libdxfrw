@@ -7,7 +7,28 @@ project(DXFRW VERSION 1.0.1)
 if (MSVC)
     add_compile_options(/W4 /WX)
 else()
-    add_compile_options(-Wall -Wextra -pedantic -Werror)
+    add_compile_options(-Wall -Wextra -pedantic -Werror 
+    -Wcast-align -Wcast-qual -Wctor-dtor-privacy 
+    -Wdisabled-optimization -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations 
+    -Wmissing-include-dirs -Wnoexcept -Wold-style-cast -Woverloaded-virtual 
+    -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel 
+    -Wstrict-overflow=5 -Wswitch-default -Wundef -Werror -Wno-unused 
+    -Wconversion 
+    -Wfloat-equal 
+    -Wformat-nonliteral -Wformat-security  
+    -Wformat-y2k 
+    -Wimport  -Winit-self  -Winline 
+    -Wmissing-field-initializers -Wmissing-format-attribute   
+    -Wmissing-include-dirs -Wmissing-noreturn 
+    -Wredundant-decls 
+    -Wshadow 
+    -Wstrict-aliasing=2 -Wswitch-default 
+    -Wswitch-enum 
+    -Wunreachable-code -Wunused 
+    -Wunused-parameter 
+    -Wvariadic-macros 
+    -Wwrite-strings)
+
 endif()
 
 
